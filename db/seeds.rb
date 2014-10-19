@@ -5,10 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#
+
 if Project.all.empty?
   projects = Project.create([
     {
+      id: 1,
       title: "Mechanic Catalog",
       thumbnail_filename: "http://placehold.it/220x165",
       description: "This is a project. Here is the description that goes along with it. \n
@@ -16,6 +17,7 @@ if Project.all.empty?
       client: "Dixon"
     },
     {
+      id: 2,
       title: "Nurse Catalog",
       thumbnail_filename: "http://placehold.it/220x165",
       description: "This is a project. Here is the description that goes along with it. \n
@@ -23,6 +25,7 @@ if Project.all.empty?
       client: "Dixon"
     },
     {
+      id: 3,
       title: "Underwater Thing",
       thumbnail_filename: "http://placehold.it/220x165",
       description: "This is a project. Here is the description that goes along with it. \n
@@ -30,6 +33,7 @@ if Project.all.empty?
       client: "Carl Marps"
     },
     {
+      id: 4,
       title: "Something in Space",
       thumbnail_filename: "http://placehold.it/220x165",
       description: "This is a project. Here is the description that goes along with it. \n
@@ -37,4 +41,47 @@ if Project.all.empty?
       client: "Jake Buttface"
     },
   ])
+end
+
+if Gallery.all.empty?
+
+  galleries = Gallery.create([
+    {
+      project_id: 1,
+      image_filenames: [
+        "http://placehold.it/500x400",
+        "http://placehold.it/550x450",
+        "http://placehold.it/500x400",
+        "http://placehold.it/550x450"
+      ]
+    },
+    {
+      project_id: 2,
+      image_filenames: [
+        "http://placehold.it/500x400",
+        "http://placehold.it/550x450",
+        "http://placehold.it/500x400",
+        "http://placehold.it/550x450"
+      ]
+    },
+    {
+      project_id: 3,
+      image_filenames: [
+        "http://placehold.it/500x400",
+        "http://placehold.it/550x450",
+        "http://placehold.it/500x400",
+        "http://placehold.it/550x450"
+      ]
+    },
+    {
+      project_id: 4,
+      image_filenames: [
+        "http://placehold.it/500x400",
+        "http://placehold.it/550x450",
+        "http://placehold.it/500x400",
+        "http://placehold.it/550x450"
+      ]
+    },
+  ])
+
 end

@@ -1,4 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<div class="project-images">
+  <% @project.gallery.image_filenames.each do |image_filename|  %>
+    <img src="<%= image_filename %>" />
+  <% end %>
+</div>
+
+<div class="project-information">
+  <ul>
+    <li>client: <%= @project.client %></li>
+    <li>description: <%= @project.description %></li>
+  </ul>
+</div>

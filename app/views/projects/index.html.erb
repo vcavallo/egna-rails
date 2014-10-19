@@ -2,14 +2,16 @@
 
 <ul class="projects">
   <% @projects.each do |project| %>
-    <li>
-      <div class="project-thumbnail">
-        <img src="<%= project.thumbnail_filename %>" />
-      </div>
-      <div class="project-title">
-        <h2><%= project.title %></h2>
-      </div>
-    </li>
+    <a href="<%= url_for project %>">
+      <li>
+        <div class="project-thumbnail">
+          <img src="<%= project.thumbnail_filename %>" />
+        </div>
+        <div class="project-title">
+          <h2><%= project.title %></h2>
+        </div>
+      </li>
+    </a>
   <% end %>
 </ul>
 
