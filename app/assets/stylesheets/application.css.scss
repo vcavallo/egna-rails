@@ -12,3 +12,12 @@
  *= require_self
  *= require_tree .
  */
+
+#enga-app {
+  @include grid-row;
+
+}
+
+#main-content {
+  @include grid-row;
+}

@@ -1,0 +1,13 @@
+nav#header-nav {
+  @include grid-column(12);
+
+  h1 {
+    display: inline-block;
+    float: left;
+  }
+
+  ul.nav-links{
+    display: inline-block;
+    float: left;
+  }
+}
