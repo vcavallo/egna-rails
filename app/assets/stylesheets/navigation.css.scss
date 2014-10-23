@@ -6,8 +6,7 @@ nav#header-nav {
     float: left;
   }
 
-  ul.nav-links{
-    display: inline-block;
-    float: left;
+  ul.nav-links {
+    @include inline-list;
   }
 }
