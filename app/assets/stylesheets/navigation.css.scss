@@ -1,12 +1,25 @@
 nav#header-nav {
-  @include grid-column(12);
+  @include grid-column(10, $offset:1);
+  margin-top: 80px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
 
-  h1 {
+  h1.logo {
     display: inline-block;
     float: left;
+    line-height: 0;
+    a {
+      color: black;
+      &:hover {
+        color: white;
+      }
+    }
   }
 
   ul.nav-links {
     @include inline-list;
+    float: right;
+    padding-bottom: 10px;
   }
 }

@@ -5,3 +5,19 @@
 #projects-index {
   @include grid-column($columns: 12);
 }
+
+#project {
+  @include grid-row;
+
+  .project-images {
+    @include grid-column(8);
+  }
+
+  .project-information {
+    @include grid-column(4);
+
+    ul {
+      @include unstyled-list(10px);
+    }
+  }
+}

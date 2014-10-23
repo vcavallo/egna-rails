@@ -13,11 +13,14 @@
 
   <body>
     <div id="egna-app">
+
       <%= render 'layouts/header_nav' %>
       <div id="main-content">
         <%= yield %>
       </div>
-      <%= javascript_include_tag "application" %>
+      <%= render 'layouts/footer' %>
+
     </div>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>
