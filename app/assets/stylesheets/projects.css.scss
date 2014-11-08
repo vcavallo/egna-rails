@@ -4,6 +4,10 @@
 
 #projects-index {
   @include grid-column($columns: 12);
+
+  .projects {
+    margin-top: 50px;
+  }
 }
 
 #project {
